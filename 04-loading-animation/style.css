@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+:root {
+  --font-family: 'Karla', sans-serif;
+  --color-light: lightgray;
+  --color-dark: darkgray;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2em;
+  width: 80%;
+  margin: auto;
+  min-width: 320px;
+}
+
+.square {
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0.5em;
+  animation: rotate infinite 1.5s;
+}
+
+.square1 {
+  background: red;
+}
+
+.square2 {
+  background: orange;
+}
+
+.square3 {
+  background: blue;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-45deg);
+  }
+
+  to {
+    transform: rotate(45deg);
+  }
+}
